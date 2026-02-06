@@ -17,7 +17,7 @@ Pronounced: *Locate Dee* or: `/loʊˈkeɪt ˈdiː/`
 * Filter by extension: `located -q .ext` (e.g., `located -q .git`)
 * Full list mode: `located -all` 
 * Opens selected config in `$EDITOR` (defaults to `nano`, you can change it to anything you like).
-
+ 
 ### Installation
 
 Wget the raw package:
