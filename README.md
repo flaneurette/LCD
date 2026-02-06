@@ -1,6 +1,6 @@
 # Linux Located - fast config file finder & editor
 
-Linux Located: linux program that lets you find configs quickly.
+Linux Located: linux program that lets you find and edit configs quickly.
 
 Pronounced: *Locate Dee* or: `/loʊˈkeɪt ˈdiː/` 
 
