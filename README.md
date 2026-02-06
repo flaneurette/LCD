@@ -16,10 +16,33 @@ Linux Locate: a bash service that lets you find configs quickly.
 
 ### Installation
 
+Wget the raw package:
+
+```
+wget https://github.com/flaneurette/Linux-Located/raw/refs/heads/main/located-1.0.deb
+sudo dpkg -i located-1.0.deb
+```
+
+Manpage:
+```
+man located
+```
+
+Usage:
+
+```bash
+located            # Show prioritized config files
+located -all       # Show all config files found in /etc
+located -q .ext    # Filter by extension, e.g., .yaml, .json, .git
+```
+
+### Manual installation
+
+
 1. Clone this repository:
 
 ```bash
-sudo nano /usr/local/bin/locate
+sudo nano /usr/local/bin/located
 ```
 
 Paste the attached locate.sh script.
@@ -27,21 +50,21 @@ Paste the attached locate.sh script.
 2. Make it executable:
 
 ```bash
-chmod +x /usr/local/bin/locate
+chmod +x /usr/local/bin/located
 ```
 
 3. Run it:
 
 ```bash
-locate
+located
 ```
 
 ### Usage
 
 ```bash
-locate            # Show prioritized config files
-locate -all       # Show all config files found in /etc
-locate -q .ext    # Filter by extension, e.g., .yaml, .json, .git
+located            # Show prioritized config files
+located -all       # Show all config files found in /etc
+located -q .ext    # Filter by extension, e.g., .yaml, .json, .git
 ```
 
 1. Select a number from the list to open the file in your editor.
