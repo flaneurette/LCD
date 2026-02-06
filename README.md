@@ -2,7 +2,7 @@
 
 Linux Located: a bash service that lets you find configs quickly.
 
-Pronounced: *Locate Dee* or: `/loʊˈkeɪt ˈdiː/`
+Pronounced: *Locate Dee* or: `/loʊˈkeɪt ˈdiː/` 
 
 `located` is a simple linux program to quickly find and edit configuration files on Linux systems. It saves time hunting through `/etc` and other system directories, supporting multiple formats, priority configs, multi-column display, and extension filtering.
 
@@ -53,8 +53,8 @@ located -q .ext    # Filter by extension, e.g., .yaml, .json, .git
 ```bash
 sudo nano /usr/local/bin/located
 ```
-
-Paste the attached locate.sh script.
+ 
+Paste the attached locate.sh script. 
 
 2. Make it executable:
 
