@@ -19,7 +19,7 @@ Pronounced: *Locate Dee* or: `/loʊˈkeɪt ˈdiː/`
 * Opens selected config in `$EDITOR` (defaults to `nano`, you can change it to anything you like).
 
 ### Installation
- 
+
 Wget the raw package:
 
 ```
