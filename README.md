@@ -9,7 +9,7 @@ Pronounced: *Locate Dee* or: `/loʊˈkeɪt ˈdiː/`
 <img src="https://raw.githubusercontent.com/flaneurette/Linux-Located/refs/heads/main/src/Locate-Dee.png">
 
 ### Features
-
+ 
 * Lists configuration files in `/etc`
 * Multi-column display for easy viewing
 * Priority list for frequently used configs (Postfix, Apache, Fail2Ban, etc.)
