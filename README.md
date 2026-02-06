@@ -1,6 +1,6 @@
 # Linux Located - fast config file finder & editor
 
-Linux Located: a bash service that lets you find configs quickly.
+Linux Located: linux program that lets you find configs quickly.
 
 Pronounced: *Locate Dee* or: `/loʊˈkeɪt ˈdiː/` 
 
@@ -10,7 +10,7 @@ Pronounced: *Locate Dee* or: `/loʊˈkeɪt ˈdiː/`
 
 ### Features
 
-* Lists configuration files in `/etc` with line numbers and color highlighting
+* Lists configuration files in `/etc`
 * Multi-column display for easy viewing
 * Priority list for frequently used configs (Postfix, Apache, Fail2Ban, etc.)
 * Supports common config extensions: `.conf`, `.ini`, `.cf`, `.local`, `.cnf`, `.yaml`, `.yml`, `.json`, `.env`, `.rules`, `.list`, `.service`, `.socket`, `.timer`
