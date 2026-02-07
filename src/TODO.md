@@ -31,8 +31,8 @@ Often it's `service -v`, then `--version`, another has `-changelog` or `-version
 We can simply map them all to an understandable format:
 
 ```
-located linux -v (shows uname -a)
-located php -v
+located linux -v 		 # shows uname -a
+located php -v			 # shows real webserver PHP
 located apache -v
 located dovecot -v
 located postfix -v
