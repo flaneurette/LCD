@@ -28,12 +28,16 @@ located -firewall 		 # shows/edits `iptables -L -n -v` (easy to forget, so short
 located -firewall6 		 # shows/edits `ip6tables -L -n -v` (easy to forget, so shortcut: -firewall6)
 ```
 
+Vhosts management
+
 ```
 located -vhosts          # Apache/Nginx virtual host configs
 located -sites           # enabled sites
 located -sites-available # all available site configs
 located -sites-enabled   # just the active ones
 ```
+
+Search on filesize, and open it.
 
 ```
 located -size >100M      # files larger than 100M
