@@ -35,7 +35,7 @@ located -vhosts          # Apache/Nginx virtual host configs
 located -sites           # all sites configs
 ```
 
-Search on filesize, and open it.
+Search on filesize.
 
 ```
 located -size >100M      # files larger than 100M
