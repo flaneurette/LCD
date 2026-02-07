@@ -24,7 +24,7 @@ Each mode could have its own priority list and search paths. Like: *located -log
 Firewall management
 
 ```
-located -firewall 		 # shows/edits `iptables -L -n -v`
+located -firewall 		 # shows/edits `iptables -L -n -v` (easy to forget, so shortcut: -firewall)
 ```
 
 ```
