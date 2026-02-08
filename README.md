@@ -36,7 +36,7 @@ lcd -q .ext    # Filter by extension, e.g., .yaml, .json, .git
 * Full list mode: `lcd -all`
 * Opens selected config in `$EDITOR` (defaults to `nano`, you can change it to anything you like).
 
-### .deb installation
+### Alternative: .deb installation
 
 Wget the raw package:
 
@@ -58,7 +58,7 @@ lcd -all       # Show all config files found in /etc
 lcd -q .ext    # Filter by extension, e.g., .yaml, .json, .git
 ```
  
-### Manual installation (with config options)
+### Alternative: manual installation (with config options)
 
 1. Clone this repository:
 
