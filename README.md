@@ -2,7 +2,7 @@
 
 **LCD - Linux Control Dashboard (List > Choose > Do)**
 
-It is a simple GNU-Linux program to quickly find and edit configuration files on Linux systems. It saves time hunting through `/etc` and other system directories, supporting multiple formats, priority configs, multi-column display, and extension filtering.
+It is a simple GNU-Linux program to quickly find and edit configuration files on Linux systems. It saves time hunting through `/etc` and other system directories, supporting multiple formats, priority configs, multi-column display, and extension filtering. Future versions give even more control.
 
 ### Quick Installation
 
