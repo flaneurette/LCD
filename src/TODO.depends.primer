@@ -14,5 +14,6 @@ Those should be soft-checked (command -v) or optional.
 debian/control
 	Depends: findutils,
 		util-linux
-	Suggests: systemd
+	Suggests: systemd,
+		iptables
 ```
