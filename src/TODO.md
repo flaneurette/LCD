@@ -20,7 +20,16 @@ Each mode could have its own priority list and search paths. Like: *located -log
 /var/log/mysql/error.log
 ```
 
+
 # Other ideas
+
+Easy service management. No more `systemctl` / `service` which all have a different parameter order (confusing).
+
+```
+located apache -start             # also accepts apache2
+located apache -stop    | -quit
+located apache -restart | -reboot
+```
 
 Versioning. 
 
