@@ -57,14 +57,6 @@ Install it:
 ```
 sudo dpkg -i lcd_1.0-0_all.deb
 ```
-
-Usage:
-
-```bash
-lcd            # Show prioritized config files
-lcd -all       # Show all config files found in /etc
-lcd -q .ext    # Filter by extension, e.g., .yaml, .json, .git
-```
  
 ### Alternative: manual installation (with config options)
 
@@ -82,24 +74,9 @@ Paste the attached lcd.sh script.
 chmod +x /usr/local/bin/lcd
 ```
 
-3. Run it:
-
-```bash
-lcd
-```
-
-### Usage
-
-```bash
-lcd            # Show prioritized config files
-lcd -all       # Show all config files found in /etc
-lcd -q .ext    # Filter by extension, e.g., .yaml, .json, .git
-```
-
-1. Select a number from the list to open the file in your editor.
-2. Default editor is `$EDITOR`, fallback is `nano`.
-
 ### Customization 
+
+* Default editor is `$EDITOR`, fallback is `nano`.
 
 * Change colors by setting the `COLOR` environment variable:
 
@@ -117,7 +94,7 @@ NUMCOLOR="\e[38;5;82m"  # green
 
 ### Supported Extensions
 
-You add extensions freely.
+You can add extensions freely.
 
 ```
 .conf, .ini, .cf, .local, .cnf, .config, .yaml, .yml, .json, .env, .rules, .list, .service, .socket, .timer
