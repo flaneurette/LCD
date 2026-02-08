@@ -24,7 +24,7 @@ lcd -all       # Show all config files found in /etc
 lcd -q .ext    # Filter by extension, e.g., .yaml, .json, .git
 ```
 
-<img src="https://raw.githubusercontent.com/flaneurette/LCD/refs/heads/main/src/Terminal.png">
+<img src="https://raw.githubusercontent.com/flaneurette/LCD/refs/heads/main/src/images/Terminal.png">
 
 ### Depends
 
