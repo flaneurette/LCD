@@ -55,7 +55,7 @@ lcd php -v			 # shows real webserver PHP
 lcd apache -v
 lcd dovecot -v
 lcd postfix -v
-lcd all -v          # show versions of all installed services!
+lcd all -v           # show versions of all installed services!
 ```
 
 Example of beautiful formatting:
