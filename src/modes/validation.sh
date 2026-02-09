@@ -12,9 +12,18 @@ is_config_key() {
 
 # Validate editors
 validate_editor() {
-  case "$1" in
-    nano|vim|vi|emacs|neovim|gedit|kate|kwrite|mousepad|leafpad|pluma|xed|geany|sublime-text|vscode|atom|brackets|bluefish|jed|joe|pico|ed|sed|ex|mcedit|ne|micro|kakoune|helix|amp|vis|slap|dte|zile|mg|e3|ee|fte|cooledit|xemacs|spacemacs|doom-emacs|tilde|sandy|textadept|howl|lite|xi|kak|sam|acme|ed|qe|vy|wily|adie|beaver) return 0 ;;
-    *) return 1 ;;
+  local ed="$1"
+
+  case "$ed" in
+    nano|vim|vi|emacs|neovim|micro|helix|kakoune|kak|vis|amp|joe|jed|pico|mg|zile|e3|ee|fte|ex|sed|ed|sam|acme|qe|vy|wily|adie|beaver)
+      command -v "$ed" >/dev/null
+      ;;
+    gedit|kate|kwrite|mousepad|leafpad|pluma|xed|geany|sublime-text|vscode|atom|brackets|bluefish|xemacs|spacemacs|doom-emacs|textadept|howl)
+      [[ -n "${DISPLAY:-}" ]] && command -v "$ed" >/dev/null
+      ;;
+    *)
+      return 1
+      ;;
   esac
 }
 # Usage
