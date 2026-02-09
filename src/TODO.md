@@ -33,11 +33,30 @@ Each mode could have its own priority list and search paths. Like: *lcd -logs* c
 
 # Other ideas
 
+Complete Linux update, upgrade and auto-clean.
+
+```
+lcd -update 			# Updates, upgrades and auto-removes stale packages.
+```
 
 Explain.
 
 ```
 lcd -explain 			# explains the filesystem and prints it to the user.
+```
+
+Clean function.
+
+```
+lcd -clean				# Cleans/vacuums filesystem: apt, cache, tmp, logs, .tar.gz files
+lcd -clean -days 5		# Cleans/vacuums filesystem: apt, cache, tmp, logs, .tar.gz files older than nth days.
+lcd -clean -size >=100M	# Optional size param.
+```
+
+Unlocker.
+
+```
+lcd -unlock				# Removes apt/dpkg locks.
 ```
 
 Alt dir scanning.
