@@ -57,8 +57,8 @@ lcd -root 				# prints all files/scripts found in /root (must be root!)
 Home scan.
 
 ```
-lcd -home admin 		# prints all relevant files/scripts found in /home/admin/
-lcd -home alice 		# prints all relevant files/scripts found in /home/alice/
+lcd -home admin 		# prints all relevant files/scripts found in /home/admin/ (must be user OR root!)
+lcd -home alice 		# prints all relevant files/scripts found in /home/alice/ (must be user OR root!)
 ```
 
 Easy service management. No need for `systemctl` / `service` which all have a different parameter order (confusing).
