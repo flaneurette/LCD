@@ -1,6 +1,6 @@
 Example implementation for `lcd php -v`
 
-```bash
+```
 show_php_version() {
     echo -e "${COLOR}PHP Version Information:${RESET}\n"
     
@@ -92,7 +92,7 @@ show_php_version() {
 
 ## Example Output
 
-```bash
+```
 $ lcd php -v
 
 PHP Version Information:
@@ -131,8 +131,8 @@ Show all 47 extensions? (y/N):
 ## Advanced Features
 
 ### Compare CLI vs FPM settings
-```bash
-lcd php -v --compare
+```
+lcd php -v -compare
 
   Setting              CLI        FPM
   ─────────────────────────────────────
@@ -143,8 +143,8 @@ lcd php -v --compare
 ```
 
 ### Check specific extension
-```bash
-lcd php -v --ext imagick
+```
+lcd php -v -ext imagick
 
   Extension: imagick
   Status:  Loaded
@@ -153,8 +153,8 @@ lcd php -v --ext imagick
 ```
 
 ### Show FPM pool settings
-```bash
-lcd php -v --pools
+```
+lcd php -v -pools
 
   FPM Pools:
   ─────────────────────────────────────
