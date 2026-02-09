@@ -33,6 +33,13 @@ Each mode could have its own priority list and search paths. Like: *lcd -logs* c
 
 # Other ideas
 
+
+Explain.
+
+```
+lcd -explain 			# explains the filesystem and prints it to the user.
+```
+
 Alt dir scanning.
 
 ```
