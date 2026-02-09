@@ -97,6 +97,57 @@ Unlocker.
 lcd -unlock				# Removes apt/dpkg locks.
 ```
 
+Firewall management
+
+```
+lcd -firewall 		 # shows `iptables -L -n -v` (easy to forget, so shortcut: -firewall)
+lcd -firewall6 		 # shows `ip6tables -L -n -v` (easy to forget, so shortcut: -firewall6)
+
+lcd -firewall -drop 192.168.1.50       # Block IP
+lcd -firewall -drop 2001:db8::1        # Auto-detects IPv6
+lcd -firewall -accept 10.0.0.5         # Whitelist IP to all ports
+lcd -firewall -accept 10.0.0.5 -p 22   # Whitelist IP to port 22
+lcd -firewall -remove 192.168.1.50     # undo a rule
+```
+
+Vhosts management (very difficult to memorize all sites/configs/enabled/available/ssl etc if many vhosts)
+
+```
+lcd -vhosts          # Apache/Nginx virtual host configs
+lcd -sites           # all sites configs
+```
+
+Site management:
+
+```
+lcd -site example.com
+lcd -site example.com -logs
+lcd -site example.com -cert
+```
+
+Search on filesize.
+
+```
+lcd -size >100M      # files larger than 100M
+lcd -size <10M       # files smaller than 10M
+lcd -size 50M-200M   # files between 50M and 200M
+```
+
+We could combine it with the other modes too:
+
+```
+lcd -logs -size >100M     # big log files eating disk space
+lcd -archive -size >=1G    # large archives
+lcd -all -size >=500M      # any large config/system files
+```
+
+⭐ Caveat: Early on, we have to scan for `-v` or `-start -stop -restart`. If found, we know the following section are requested.
+
+```
+-v > inspect / explain
+-start/-stop/-restart > mutate state
+```
+
 Easy service management. No need for `systemctl` / `service` which all have a different parameter order (confusing).
 
 ```
@@ -143,48 +194,4 @@ lcd apache -v
   Installed: 		Apache/2.4.52
   Running:   		Apache/2.4.52
   Mods available: 	mod_proxy, mod_evasive, ...
-```
-
-Firewall management
-
-```
-lcd -firewall 		 # shows `iptables -L -n -v` (easy to forget, so shortcut: -firewall)
-lcd -firewall6 		 # shows `ip6tables -L -n -v` (easy to forget, so shortcut: -firewall6)
-
-lcd -firewall -drop 192.168.1.50       # Block IP
-lcd -firewall -drop 2001:db8::1        # Auto-detects IPv6
-lcd -firewall -accept 10.0.0.5         # Whitelist IP to all ports
-lcd -firewall -accept 10.0.0.5 -p 22   # Whitelist IP to port 22
-lcd -firewall -remove 192.168.1.50     # undo a rule
-```
-
-Vhosts management (very difficult to memorize all sites/configs/enabled/available/ssl etc if many vhosts)
-
-```
-lcd -vhosts          # Apache/Nginx virtual host configs
-lcd -sites           # all sites configs
-```
-
-Site management:
-
-```
-lcd -site example.com
-lcd -site example.com -logs
-lcd -site example.com -cert
-```
-
-Search on filesize.
-
-```
-lcd -size >100M      # files larger than 100M
-lcd -size <10M       # files smaller than 10M
-lcd -size 50M-200M   # files between 50M and 200M
-```
-
-We could combine it with the other modes too:
-
-```
-lcd -logs -size >100M     # big log files eating disk space
-lcd -archive -size >=1G    # large archives
-lcd -all -size >=500M      # any large config/system files
 ```
