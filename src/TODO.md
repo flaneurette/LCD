@@ -66,6 +66,13 @@ Explain.
 lcd -explain 			# explains the filesystem and prints it to the user. (Simply list everything in ~)
 ```
 
+Aliases.
+
+```
+lcd -alias | -aliases   # edit aliases
+lcd -alias -save		# save aliases
+```
+
 Clean function.
 
 ```
